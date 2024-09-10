@@ -26,7 +26,7 @@ const Home = () => {
 
           {/* scoial media logo */}
           <div className="mt-10">
-            <h1 className="text-white font-bold text-xl">Find With ME !</h1>
+            <h1 className="text-white font-bold text-xl">Follow ME !</h1>
             <div className="flex space-x-5 mt-5 text-gray-400 ">
               <FaFacebook
                 className="cursor-pointer shadow-md shadow-gray-300 hover:shadow-none"
