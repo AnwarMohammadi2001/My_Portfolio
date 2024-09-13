@@ -1,8 +1,50 @@
 import React from "react";
+import { useState, useEffect, useRef } from "react";
+import { motion } from "framer-motion";
 import cover from "../../assets/images/cover1.png";
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Home = () => {
+  const sentence = "Mohammad Anwar";
+  const letters = sentence.split("");
+  const [isInView, setIsInView] = useState(false);
+  const textRef = useRef(null); // Reference to the text
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsInView(true); // Set to true when in view
+        } else {
+          setIsInView(false); // Reset to false when out of view (optional)
+        }
+      },
+      { threshold: 0.1 } // Adjust the threshold as per your needs
+    );
+
+    if (textRef.current) {
+      observer.observe(textRef.current);
+    }
+
+    return () => {
+      if (textRef.current) {
+        observer.unobserve(textRef.current);
+      }
+    };
+  }, []);
+  const container = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.09, // Stagger each child (letter) by 0.08s
+      },
+    },
+  };
+  const child = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0 },
+  };
+
   return (
     <div>
       <div className="container min-h-[600px] pt-10  grid grid-cols-1 md:grid-cols-2">
@@ -10,12 +52,45 @@ const Home = () => {
           <h1 className="text-md font-bold text-white">
             Welcome to My World !
           </h1>
-          <h1 className="text-4xl font-bold mt-8 text-white">
-            Hi , I'm <span className="text-[#ff014f]">Mohammad Anwar</span>
-          </h1>
+          <motion.h1
+            ref={textRef} // Reference to observe this element
+            className="text-4xl font-bold mt-8 text-white"
+            variants={container}
+            initial="hidden"
+            animate={isInView ? "visible" : "hidden"} // Play animation when in view
+          >
+            {"Hi, I'm "}
+            {letters.map((letter, index) => (
+              <motion.span
+                key={index}
+                className={
+                  letter === "Mohammad Anwar"
+                    ? "text-[#ff014f]"
+                    : "text-[#ff014f]"
+                }
+                variants={child}
+              >
+                {letter === " " ? "\u00A0" : letter}
+              </motion.span>
+            ))}
+          </motion.h1>
           <p className="text-3xl text-white font-bold mt-3  tracking-wider">
             a Professional Web <br />{" "}
-            <span className="text-[#ff014f]">Developer !</span>
+            <span className="text-[#ff014f]">
+              Developer{" "}
+              <motion.span
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 0.5, scale: 2 }}
+                transition={{
+                  duration: 0.5,
+                  ease: "easeInOut",
+                  repeat: Infinity,
+                  repeatDelay: 1,
+                }}
+              >
+                !
+              </motion.span>
+            </span>
           </p>
           <p className="mt-10 text-gray-300 text-lg text-justify">
             I'm passionate about building modern, user-friendly websites using
