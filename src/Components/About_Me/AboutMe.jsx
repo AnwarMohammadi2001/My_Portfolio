@@ -2,7 +2,7 @@ import React from "react";
 import cover from "../../assets/images/cover_2.png";
 const AboutMe = () => {
   return (
-    <div className="py-16">
+    <div id="aboutme" className="py-16">
       <div className="grid grid-cols-1 md:grid-cols-2">
         <div className="flex justify-center items-center">
           <div className=" w-[400px] flex justify-center  rounded-xl z-10 border border-black shadow-lg shadow-white ">
@@ -23,11 +23,7 @@ const AboutMe = () => {
             gained extensive experience in front-end technologies such as HTML,
             CSS, Tailwind CSS, Bootstrap, JavaScript, and React.js.
           </p>
-          <p className="w-[550px] mt-5 text-gray-300 text-md font-semibold">
-            I enjoy creating responsive, user-friendly web applications and have
-            a keen eye for design. My proficiency in React and Tailwind CSS
-            allows me to build modern and dynamic web interfaces.
-          </p>
+
           <button className="bg-[#ff014f] text-white mt-7 font-bold text-lg px-3 hover:bg-[#930d35] py-1.5 rounded-md">
             Download Resume
           </button>

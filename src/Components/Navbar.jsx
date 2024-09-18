@@ -1,31 +1,30 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const navItems = [
   {
     id: 1,
     title: "Home",
-    path: "/",
+    path: "#home",
   },
   {
     id: 2,
     title: "About me",
-    path: "/aboutme",
+    path: "#aboutme",
   },
   {
     id: 3,
     title: "Projects",
-    path: "/",
+    path: "#projects",
   },
   {
     id: 4,
     title: "Skills",
-    path: "/",
+    path: "#skills",
   },
   {
     id: 5,
     title: "Contact",
-    path: "/",
+    path: "#contact",
   },
 ];
 export const Navbar = () => {
@@ -35,7 +34,7 @@ export const Navbar = () => {
         <div>
           {/* Logo and Name */}
           <h1 className="text-3xl font-bold text-[#F0F0F0]">
-            <Link to="/" className="uppercase flex items-center space-x-2">
+            <a href="home" className="uppercase flex items-center space-x-2">
               <span className="flex justify-center items-center w-12 h-12 text-white rounded-full bg-[#ff014f] font-bold text-3xl">
                 M
               </span>
@@ -45,7 +44,7 @@ export const Navbar = () => {
               >
                 ANWAR
               </span>
-            </Link>{" "}
+            </a>{" "}
             {/* Link to Homepage */}
           </h1>
         </div>
@@ -54,9 +53,9 @@ export const Navbar = () => {
             {navItems.map((item) => (
               <li
                 key={item.id}
-                className="uppercase inline-block hover:text-[#ff014f] text-white text-lg hover:shadow-[0_3px_0_-1px_#ff014f] duration-300 font-semibold"
+                className="uppercase inline-block cursor-pointer hover:text-[#ff014f] text-white text-lg hover:shadow-[0_3px_0_-1px_#ff014f] duration-300 font-semibold"
               >
-                <Link to={item.path}>{item.title}</Link>
+                <a href={item.path}>{item.title}</a>
               </li>
             ))}
           </ul>

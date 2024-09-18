@@ -33,9 +33,9 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div className=" mx-auto px-4 py-10">
+    <div id="projects" className=" mx-auto px-4 py-10">
       <div className="flex justify-center">
-        <h1 className="text-white font-bold text-3xl pb-10">My Latest Work</h1>
+        <h1 className="text-white font-bold text-3xl pb-10">My Projects</h1>
       </div>
       {/* Grid layout for cards */}
       <div className=" container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">

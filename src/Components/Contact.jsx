@@ -3,7 +3,7 @@ import { FaEnvelope, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
 
 const Contact = () => {
   return (
-    <div className=" mx-auto px-4 py-12">
+    <div id="contact" className=" mx-auto px-4 py-12">
       <div className="container">
         {/* Contact Form Section */}
         <div className="flex flex-col lg:flex-row gap-8">
