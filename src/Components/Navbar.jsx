@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaXmark } from "react-icons/fa6";
 import { MdMenu } from "react-icons/md";
+import ResponsiveNavbar from "./ResponsiveNavbar";
 
 const navItems = [
   {
@@ -74,6 +75,9 @@ export const Navbar = () => {
           )}
         </div>
       </nav>
+      <div className="block md:hidden">
+        <ResponsiveNavbar open={isopen} navItems={navItems} />
+      </div>
     </div>
   );
 };
