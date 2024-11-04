@@ -12,7 +12,7 @@ const Backend = () => {
             className="flex items-center gap-5  px-4 py-2"
           >
             {/* Skill Icon */}
-            <div className="text-3xl text-indigo-600">{skill.icon}</div>
+            <div className="text-3xl text-indigo-600" style={{color:skill.color}}>{skill.icon}</div>
 
             {/* Skill Details with Progress Bar */}
             <div className="w-full">
@@ -27,7 +27,7 @@ const Backend = () => {
               <div className="relative w-full h-2 bg-gray-200 rounded-full overflow-hidden">
                 <div
                   className="absolute left-0 top-0 h-full bg-indigo-600 rounded-full"
-                  style={{ width: `${skill.percentage}%` }}
+                  style={{ width: `${skill.percentage}%` , backgroundColor: skill.color}}
                 />
               </div>
             </div>

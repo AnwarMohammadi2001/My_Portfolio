@@ -24,36 +24,43 @@ export const skillsData = {
       name: "HTML",
       percentage: 90,
       icon: <FaHtml5 />,
+      color: "#E34F26", // HTML orange
     },
     {
       name: "CSS",
       percentage: 85,
       icon: <FaCss3 />,
-      path: "/path/to/css-icon.png",
+      color: "#1572B6", // CSS blue
     },
-    { name: "JavaScript", percentage: 80, icon: <IoLogoJavascript /> },
+    {
+      name: "JavaScript",
+      percentage: 80,
+      icon: <IoLogoJavascript />,
+      color: "#F7DF1E", // JavaScript yellow
+    },
     {
       name: "Tailwind CSS",
       percentage: 90,
       icon: <RiTailwindCssFill />,
+      color: "#38B2AC", // Tailwind teal
     },
     {
       name: "Bootstrap",
       percentage: 70,
       icon: <FaBootstrap />,
-      path: "/path/to/bootstrap-icon.png",
+      color: "#7952B3", // Bootstrap purple
     },
     {
       name: "React.js",
       percentage: 75,
       icon: <FaReact />,
-      path: "/path/to/react-icon.png",
+      color: "#61DAFB", // React cyan
     },
     {
       name: "Vue.js",
       percentage: 70,
       icon: <FaVuejs />,
-      path: "/path/to/vue-icon.png",
+      color: "#4FC08D", // Vue green
     },
   ],
   backend: [
@@ -61,25 +68,25 @@ export const skillsData = {
       name: "MySQL",
       percentage: 80,
       icon: <DiMysql />,
-      path: "/path/to/mysql-icon.png",
+      color: "#00758F", // MySQL blue
     },
     {
       name: "MongoDB",
       percentage: 75,
       icon: <SiMongodb />,
-      path: "/path/to/mongodb-icon.png",
+      color: "#47A248", // MongoDB green
     },
     {
       name: "Node.js",
       percentage: 70,
       icon: <FaNodeJs />,
-      path: "/path/to/node-icon.png",
+      color: "#339933", // Node.js green
     },
     {
       name: "RESTful API",
       percentage: 75,
       icon: <TbApi />,
-      path: "/path/to/api-icon.png",
+      color: "#6E757C", // API neutral gray
     },
   ],
   tools: [
@@ -87,13 +94,13 @@ export const skillsData = {
       name: "Git",
       percentage: 85,
       icon: <FaGitAlt />,
-      path: "/path/to/git-icon.png",
+      color: "#F05032", // Git orange
     },
     {
       name: "GitHub",
       percentage: 85,
       icon: <FaGithub />,
-      path: "/path/to/github-icon.png",
+      color: "#181717", // GitHub black
     },
   ],
   softSkills: [
@@ -101,19 +108,19 @@ export const skillsData = {
       name: "VS Code",
       percentage: 90,
       icon: <VscVscode />,
-      path: "/path/to/vscode-icon.png",
+      color: "#007ACC", // VS Code blue
     },
     {
       name: "Photoshop",
       percentage: 70,
       icon: <SiAdobephotoshop />,
-      path: "/path/to/photoshop-icon.png",
+      color: "#31A8FF", // Photoshop blue
     },
     {
       name: "Office Package",
       percentage: 80,
       icon: <FaFileWord />,
-      path: "/path/to/office-icon.png",
+      color: "#D83B01", // Office red
     },
   ],
 };

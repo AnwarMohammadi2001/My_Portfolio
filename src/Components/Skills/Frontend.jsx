@@ -7,12 +7,14 @@ const Frontend = () => {
       <h2 className="text-2xl font-bold text-center mb-4">Frontend Skills</h2>
       <div className="space-y-4 px-2">
         {skillsData.frontend.map((skill, index) => (
-          <div
-            key={index}
-            className="flex items-center gap-5 px-4 py-2"
-          >
+          <div key={index} className="flex items-center gap-5 px-4 py-2">
             {/* Skill Icon */}
-            <div className="text-3xl text-indigo-600">{skill.icon}</div>
+            <div
+              className="text-3xl"
+              style={{ color: skill.color }}
+            >
+              {skill.icon}
+            </div>
 
             {/* Skill Details with Progress Bar */}
             <div className="w-full">
@@ -26,8 +28,11 @@ const Frontend = () => {
               </div>
               <div className="relative w-full h-2 bg-gray-200 rounded-full overflow-hidden">
                 <div
-                  className="absolute left-0 top-0 h-full bg-indigo-600 rounded-full"
-                  style={{ width: `${skill.percentage}%` }}
+                  className="absolute left-0 top-0 h-full  rounded-full"
+                  style={{
+                    width: `${skill.percentage}%`,
+                    backgroundColor: skill.color,
+                  }}
                 />
               </div>
             </div>
