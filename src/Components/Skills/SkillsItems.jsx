@@ -37,7 +37,7 @@ const SkillsItems = () => {
     }
   };
   return (
-    <div className="container grid grid-cols-1 md:grid-cols-2">
+    <div className="container grid grid-cols-1 md:grid-cols-2 ">
       <div className="py-5 px-10">
         <div className="grid grid-cols-2 gap-10 px-10">
           <div
@@ -115,7 +115,9 @@ const SkillsItems = () => {
         </div>
       </div>
       <div className="flex items-center justify-center">
-        <div className="">{renderTabContent()}</div>
+        <div className="h-full w-[450px]  rounded-lg border border-white">
+          {renderTabContent()}
+        </div>
       </div>
     </div>
   );

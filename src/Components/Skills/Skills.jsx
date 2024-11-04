@@ -4,10 +4,8 @@ import SkillsItems from "./SkillsItems";
 const Skills = () => {
   return (
     <div>
-      <div className="">
-        <div>
-          <SkillsItems />
-        </div>
+      <div className="px-10">
+        <SkillsItems />
       </div>
     </div>
   );
