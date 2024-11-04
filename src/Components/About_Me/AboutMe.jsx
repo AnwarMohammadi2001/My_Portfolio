@@ -4,11 +4,11 @@ import cover from "../../assets/images/cover_2.png";
 
 const AboutMe = () => {
   return (
-    <div id="aboutme" className="py-16">
+    <div id="aboutme" className="py-16 overflow-x-hidden">
       <div className="grid grid-cols-1 md:grid-cols-2">
         {/* Image Section with Framer Motion */}
         <motion.div
-          className="flex justify-center items-center"
+          className="flex justify-center  items-center"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, ease: "easeInOut" }}

@@ -47,7 +47,7 @@ const Home = () => {
 
   return (
     <div>
-      <div id="home" className="container min-h-[600px] pt-10  grid grid-cols-1 md:grid-cols-2">
+      <div id="home" className="container  min-h-[600px] pt-10  grid grid-cols-1 md:grid-cols-2">
         <div className="flex flex-col pt-10 items-start">
           <h1 className="text-md font-bold text-white">
             Welcome to My World !

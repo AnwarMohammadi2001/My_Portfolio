@@ -13,7 +13,7 @@ const Contact = () => {
   const textStyle = "text-gray-600";
 
   return (
-    <div id="contact" className="container mx-auto px-20 py-12">
+    <div id="contact" className="container mx-auto md:px-20 py-12">
       <motion.div
         className="container grid grid-cols-1 lg:grid-cols-3 gap-12"
         initial="hidden"
@@ -22,7 +22,7 @@ const Contact = () => {
         transition={{ duration: 0.8, ease: "easeInOut" }}
       >
         {/* Contact Form Section */}
-        <div className="bg-gray-700 rounded-lg col-span-2 shadow-lg p-10">
+        <div className="bg-gray-700 rounded-lg col-span-2 shadow-lg p-5 md:p-10">
           <h2 className="text-3xl font-semibold mb-6 text-[#2bb987] ">
             Let's Work together
           </h2>
@@ -33,7 +33,7 @@ const Contact = () => {
                 <input
                   required
                   type="text"
-                  className="border-2 w-full  text-gray-300 px-3 text-lg py-2 focus:outline-none bg-transparent rounded-md focus:border-[#2bb987] peer"
+                  className="border-2 w-full  text-gray-300 px-3 focus:text-[#2bb987] text-lg py-2 focus:outline-none bg-transparent rounded-md focus:border-[#2bb987] peer"
                 />
                 <span className="absolute left-0 top-3 px-2 text-md uppercase text-white peer-focus:text-[#2bb987] pointer-events-none peer-focus:text-sm peer-focus:-translate-y-5  duration-200 peer-focus:border-r-2 peer-focus:border-[#2bb987] peer-focus:border-l-2 bg-gray-700 peer-valid:text-sm peer-valid:-translate-y-5 ml-4">
                   Enter Your Name
@@ -44,7 +44,7 @@ const Contact = () => {
                 <input
                   required
                   type="email"
-                  className="border-2 w-full  text-gray-300 px-3 text-lg py-2 focus:outline-none bg-transparent rounded-md focus:border-[#2bb987] peer"
+                  className="border-2 w-full  text-gray-300 px-3 focus:text-[#2bb987] text-lg py-2 focus:outline-none bg-transparent rounded-md focus:border-[#2bb987] peer"
                 />
                 <span className="absolute left-0 top-3 px-2 text-md uppercase text-white peer-focus:text-[#2bb987] pointer-events-none peer-focus:text-sm peer-focus:-translate-y-5 duration-200 peer-focus:border-r-2 peer-focus:border-[#2bb987] peer-focus:border-l-2 bg-gray-700 peer-valid:text-sm peer-valid:-translate-y-5 ml-4">
                   Enter Your Email
@@ -67,7 +67,7 @@ const Contact = () => {
             </div>
 
             {/* Submit Button */}
-            <div className="">
+            <div className="flex justify-center md:justify-start lg:justify-end">
               <button
                 type="submit"
                 className=" bg-[#2bb987] text-white py-2 px-4 rounded-lg font-bold hover:bg-[#45ecb2] transition duration-300"

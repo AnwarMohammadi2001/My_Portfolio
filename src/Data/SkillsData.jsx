@@ -22,13 +22,13 @@ export const skillsData = {
   frontend: [
     {
       name: "HTML",
-      percentage: 90,
+      percentage: 100,
       icon: <FaHtml5 />,
       color: "#E34F26", // HTML orange
     },
     {
       name: "CSS",
-      percentage: 85,
+      percentage: 90,
       icon: <FaCss3 />,
       color: "#1572B6", // CSS blue
     },
@@ -40,25 +40,25 @@ export const skillsData = {
     },
     {
       name: "Tailwind CSS",
-      percentage: 90,
+      percentage: 100,
       icon: <RiTailwindCssFill />,
       color: "#38B2AC", // Tailwind teal
     },
     {
       name: "Bootstrap",
-      percentage: 70,
+      percentage: 95,
       icon: <FaBootstrap />,
       color: "#7952B3", // Bootstrap purple
     },
     {
       name: "React.js",
-      percentage: 75,
+      percentage: 90,
       icon: <FaReact />,
       color: "#61DAFB", // React cyan
     },
     {
       name: "Vue.js",
-      percentage: 70,
+      percentage: 65,
       icon: <FaVuejs />,
       color: "#4FC08D", // Vue green
     },
@@ -72,7 +72,7 @@ export const skillsData = {
     },
     {
       name: "MongoDB",
-      percentage: 75,
+      percentage: 85,
       icon: <SiMongodb />,
       color: "#47A248", // MongoDB green
     },
@@ -92,13 +92,13 @@ export const skillsData = {
   tools: [
     {
       name: "Git",
-      percentage: 85,
+      percentage: 95,
       icon: <FaGitAlt />,
       color: "#F05032", // Git orange
     },
     {
       name: "GitHub",
-      percentage: 85,
+      percentage: 100,
       icon: <FaGithub />,
       color: "#181717", // GitHub black
     },
@@ -106,7 +106,7 @@ export const skillsData = {
   softSkills: [
     {
       name: "VS Code",
-      percentage: 90,
+      percentage: 100,
       icon: <VscVscode />,
       color: "#007ACC", // VS Code blue
     },

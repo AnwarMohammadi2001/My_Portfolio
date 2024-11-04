@@ -13,30 +13,36 @@ const Footer = () => {
           </div>
 
           {/* Navigation Links */}
-          <div className="flex space-x-8 mb-6 md:mb-0">
+          <div className="flex space-x-5 md:space-x-8 mb-6 md:mb-0">
             <a
-              href="/"
+              href="#home"
               className="text-gray-400 hover:text-white transition duration-300"
             >
               Home
             </a>
             <a
-              href="/projects"
+              href="#aboutme"
+              className="text-gray-400 hover:text-white transition duration-300"
+            >
+              About Me
+            </a>
+            <a
+              href="#projects"
               className="text-gray-400 hover:text-white transition duration-300"
             >
               Projects
             </a>
             <a
-              href="/contact"
+              href="#skills"
+              className="text-gray-400 hover:text-white transition duration-300"
+            >
+              Skills
+            </a>
+            <a
+              href="#contact"
               className="text-gray-400 hover:text-white transition duration-300"
             >
               Contact
-            </a>
-            <a
-              href="/about"
-              className="text-gray-400 hover:text-white transition duration-300"
-            >
-              About
             </a>
           </div>
 

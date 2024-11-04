@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
+import { FaXmark } from "react-icons/fa6";
+import { MdMenu } from "react-icons/md";
 
 const navItems = [
   {
@@ -28,6 +30,7 @@ const navItems = [
   },
 ];
 export const Navbar = () => {
+  const [isopen, setIsOpen] = useState(false);
   return (
     <div>
       <nav className="container flex h-[80px] items-center  justify-between  bg-[#1E293B] ">
@@ -48,8 +51,8 @@ export const Navbar = () => {
             {/* Link to Homepage */}
           </h1>
         </div>
-        <div className="flex space-x-8 items-center">
-          <ul className="flex items-center   space-x-8">
+        <div className="hidden md:flex space-x-8 items-center">
+          <ul className=" flex items-center   space-x-8">
             {navItems.map((item) => (
               <li
                 key={item.id}
@@ -62,6 +65,13 @@ export const Navbar = () => {
           <button className="bg-[#ff014f] text-white font-bold text-lg px-5 hover:bg-[#930d35] py-1.5 rounded-md">
             Hire Me
           </button>
+        </div>
+        <div onClick={() => setIsOpen(!isopen)} className="block md:hidden">
+          {!isopen ? (
+            <MdMenu className="size-9 text-gray-100" />
+          ) : (
+            <FaXmark className="size-9 text-gray-100" />
+          )}
         </div>
       </nav>
     </div>
