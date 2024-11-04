@@ -1,15 +1,15 @@
 import React from "react";
 import { skillsData } from "../../Data/SkillsData";
 
-const Frontend = () => {
+const SofthTools = () => {
   return (
     <section className="py-2 bg-gray-50 rounded-md">
-      <h2 className="text-2xl font-bold text-center mb-4">Frontend Skills</h2>
+      <h2 className="text-2xl font-bold text-center mb-4">SoftWare Skills</h2>
       <div className="space-y-4 px-2">
-        {skillsData.frontend.map((skill, index) => (
+        {skillsData.softSkills.map((skill, index) => (
           <div
             key={index}
-            className="flex items-center gap-5 px-4 py-2"
+            className="flex items-center gap-5  px-4 py-2"
           >
             {/* Skill Icon */}
             <div className="text-3xl text-indigo-600">{skill.icon}</div>
@@ -38,4 +38,4 @@ const Frontend = () => {
   );
 };
 
-export default Frontend;
+export default SofthTools;

@@ -5,7 +5,8 @@ import { FaAppStore, FaNodeJs, FaReact, FaTools } from "react-icons/fa";
 import Frontend from "./Frontend";
 import Backend from "./Backend";
 import Tools from "./Tools";
-import SfthTools from "./SfthTools";
+
+import SofthTools from "./SofthTools";
 
 const SkillsItems = () => {
   const [activeTap, setActiveTab] = useState("Frontend");
@@ -31,7 +32,7 @@ const SkillsItems = () => {
     } else if (activeTap === "SoftTools") {
       return (
         <div>
-          <SfthTools />
+          <SofthTools />
         </div>
       );
     }
@@ -115,7 +116,7 @@ const SkillsItems = () => {
         </div>
       </div>
       <div className="flex items-center justify-center">
-        <div className="h-full w-[500px]  rounded-lg border border-white">
+        <div className=" w-[500px]  rounded-lg border border-white">
           {renderTabContent()}
         </div>
       </div>
