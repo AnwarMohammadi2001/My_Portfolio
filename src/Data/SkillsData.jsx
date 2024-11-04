@@ -1,11 +1,10 @@
 import { FaUser } from "react-icons/fa";
-const skillsData = {
+export const skillsData = {
   frontend: [
     {
       name: "HTML",
       percentage: 90,
       icon: <FaUser />,
-      path: "/path/to/html-icon.png",
     },
     {
       name: "CSS",
@@ -17,7 +16,7 @@ const skillsData = {
     {
       name: "Tailwind CSS",
       percentage: 90,
-      icon: "/path/to/tailwind-icon.png",
+      icon: <FaUser />,
     },
     {
       name: "Bootstrap",

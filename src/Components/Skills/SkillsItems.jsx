@@ -115,7 +115,7 @@ const SkillsItems = () => {
         </div>
       </div>
       <div className="flex items-center justify-center">
-        <div className="h-full w-[450px]  rounded-lg border border-white">
+        <div className="h-full w-[500px]  rounded-lg border border-white">
           {renderTabContent()}
         </div>
       </div>
