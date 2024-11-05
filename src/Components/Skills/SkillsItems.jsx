@@ -38,12 +38,12 @@ const SkillsItems = () => {
     }
   };
   return (
-    <div className="md:container grid grid-cols-1 md:grid-cols-2 ">
-      <div className="py-5 md:px-10">
-        <div className="grid grid-cols-2 gap-10 px-5 md:px-10">
+    <div className="lg:container grid grid-cols-1 md:grid-cols-2 ">
+      <div className="py-5 lg:px-10">
+        <div className="grid grid-cols-2 gap-10 px-5 lg:px-10">
           <div
             onClick={() => setActiveTab("Frontend")}
-            className={`md:h-28 h-24 relative cursor-pointer  rounded-md border-2 bg-transparent md:text-2xl text-lg text-white font-bold flex justify-center  items-end pb-5 md:pb-0 md:items-center ${
+            className={`md:h-28 h-24 relative cursor-pointer  rounded-md border-2 bg-transparent md:text-2xl text-lg text-white font-bold flex justify-center  items-end pb-5 lg:pb-0 lg:items-center ${
               activeTap === "Frontend"
                 ? "bg-gray-700 border-gray-100 text-[#2bb987] border-2"
                 : ""
@@ -63,7 +63,7 @@ const SkillsItems = () => {
           </div>
           <div
             onClick={() => setActiveTab("Backend")}
-            className={`md:h-28 h-24 relative cursor-pointer  rounded-md border-2 bg-transparent md:text-2xl text-lg text-white font-bold flex justify-center  items-end pb-5 md:pb-0 md:items-center ${
+            className={`md:h-28 h-24 relative cursor-pointer  rounded-md border-2 bg-transparent md:text-2xl text-lg text-white font-bold flex justify-center  items-end pb-5 lg:pb-0 lg:items-center ${
               activeTap === "Backend"
                 ? "bg-gray-700 border-gray-100 text-[#2bb987] border-2"
                 : ""
@@ -82,10 +82,10 @@ const SkillsItems = () => {
             </span>
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-10 px-10 mt-14">
+        <div className="grid grid-cols-2 gap-10 px-5 lg:px-10 mt-14">
           <div
             onClick={() => setActiveTab("Tools")}
-            className={`md:h-28 h-24 relative cursor-pointer  rounded-md border-2 bg-transparent md:text-2xl text-lg text-white font-bold flex justify-center  items-end pb-5 md:pb-0 md:items-center ${
+            className={`md:h-28 h-24 relative cursor-pointer  rounded-md border-2 bg-transparent md:text-2xl text-lg text-white font-bold flex justify-center  items-end pb-5 lg:pb-0 lg:items-center ${
               activeTap === "Tools"
                 ? "bg-gray-700 border-gray-100 text-[#2bb987] border-2"
                 : ""
@@ -106,7 +106,7 @@ const SkillsItems = () => {
           </div>
           <div
             onClick={() => setActiveTab("SoftTools")}
-            className={`md:h-28 h-24 relative cursor-pointer  rounded-md border-2 bg-transparent md:text-2xl text-lg text-white font-bold flex justify-center  items-end pb-5 md:pb-0 md:items-center ${
+            className={`md:h-28 h-24 relative cursor-pointer  rounded-md border-2 bg-transparent md:text-2xl text-lg text-white font-bold flex justify-center  items-end pb-5 lg:pb-0 lg:items-center ${
               activeTap === "SoftTools"
                 ? "bg-gray-700 border-gray-100 text-[#2bb987] border-2"
                 : ""

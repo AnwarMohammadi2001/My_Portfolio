@@ -47,8 +47,8 @@ const Home = () => {
 
   return (
     <div>
-      <div id="home" className="container  min-h-[600px] pt-10  grid grid-cols-1 md:grid-cols-2">
-        <div className="flex flex-col pt-10 items-start">
+      <div id="home" className="container  mx-auto min-h-[600px] pt-10  grid grid-cols-1 md:gap-8 lg:gap-5 md:grid-cols-2">
+        <div className="flex flex-col pt-10 items-center md:items-start">
           <h1 className="text-md font-bold text-white">
             Welcome to My World !
           </h1>
@@ -118,7 +118,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center mt-10 md:mt-0">
           <div className="h-[550x] w-[400px]   rounded-xl z-10 shadow-[0px_0px_10px_5px_#de0029]">
             <img src={cover} className="h-[550px] rounded-xl  " alt="" />
           </div>

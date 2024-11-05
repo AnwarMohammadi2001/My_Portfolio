@@ -13,7 +13,7 @@ const Contact = () => {
   const textStyle = "text-gray-600";
 
   return (
-    <div id="contact" className="container mx-auto md:px-20 py-12">
+    <div id="contact" className="container mx-auto lg:px-20 py-12">
       <motion.div
         className="container grid grid-cols-1 lg:grid-cols-3 gap-12"
         initial="hidden"
@@ -67,7 +67,7 @@ const Contact = () => {
             </div>
 
             {/* Submit Button */}
-            <div className="flex justify-center md:justify-start lg:justify-end">
+            <div className="flex justify-center  lg:justify-end">
               <button
                 type="submit"
                 className=" bg-[#2bb987] text-white py-2 px-4 rounded-lg font-bold hover:bg-[#45ecb2] transition duration-300"

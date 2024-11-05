@@ -2,10 +2,12 @@ import { div } from "framer-motion/client";
 import { motion, AnimatePresence } from "framer-motion";
 import React, { useState } from "react";
 
-const ResponsiveNavbar = ({ open, navItems }) => {
+const ResponsiveNavbar = ({ isopen, navItems, setIsOpen }) => {
+  const [closeNav, setCloseNav] = useState(false);
+
   return (
     <AnimatePresence mode="wait">
-      {open && (
+      {isopen && (
         <motion.div
           initial={{ opacity: 0, y: -100 }}
           animate={{ opacity: 1, y: 0 }}
@@ -17,6 +19,7 @@ const ResponsiveNavbar = ({ open, navItems }) => {
             <ul className="flex flex-col items-center justify-center px-20 text-white gap-3">
               {navItems.map((item, index) => (
                 <li
+                  onClick={() => setIsOpen(!isopen)}
                   key={index}
                   className="hover:bg-gray-100 text-center w-full py-2 rounded-md font-bold hover:text-slate-900"
                 >

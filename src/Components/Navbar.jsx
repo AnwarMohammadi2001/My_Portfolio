@@ -32,6 +32,7 @@ const navItems = [
 ];
 export const Navbar = () => {
   const [isopen, setIsOpen] = useState(false);
+
   return (
     <div>
       <nav className="container flex h-[80px] items-center  justify-between  bg-[#1E293B] ">
@@ -52,7 +53,7 @@ export const Navbar = () => {
             {/* Link to Homepage */}
           </h1>
         </div>
-        <div className="hidden md:flex space-x-8 items-center">
+        <div className="hidden lg:flex space-x-8 items-center">
           <ul className=" flex items-center   space-x-8">
             {navItems.map((item) => (
               <li
@@ -67,7 +68,7 @@ export const Navbar = () => {
             Hire Me
           </button>
         </div>
-        <div onClick={() => setIsOpen(!isopen)} className="block md:hidden">
+        <div onClick={() => setIsOpen(!isopen)} className="block lg:hidden">
           {!isopen ? (
             <MdMenu className="size-9 text-gray-100" />
           ) : (
@@ -75,8 +76,12 @@ export const Navbar = () => {
           )}
         </div>
       </nav>
-      <div className="block md:hidden">
-        <ResponsiveNavbar open={isopen} navItems={navItems} />
+      <div className="block lg:hidden">
+        <ResponsiveNavbar
+          isopen={isopen}
+          setIsOpen={setIsOpen}
+          navItems={navItems}
+        />
       </div>
     </div>
   );
