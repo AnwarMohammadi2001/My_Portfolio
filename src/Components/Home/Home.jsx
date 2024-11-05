@@ -47,7 +47,10 @@ const Home = () => {
 
   return (
     <div>
-      <div id="home" className="container  mx-auto min-h-[600px] pt-10  grid grid-cols-1 md:gap-8 lg:gap-5 md:grid-cols-2">
+      <div
+        id="home"
+        className="container  mx-auto min-h-[600px] pt-10  grid grid-cols-1 md:gap-8 lg:gap-5 md:grid-cols-2"
+      >
         <div className="flex flex-col pt-10 items-center md:items-start">
           <h1 className="text-md font-bold text-white">
             Welcome to My World !
@@ -103,18 +106,30 @@ const Home = () => {
           <div className="mt-10">
             <h1 className="text-white font-bold text-xl">Follow ME !</h1>
             <div className="flex space-x-5 mt-5 text-gray-400 ">
-              <FaFacebook
-                className="cursor-pointer shadow-md shadow-gray-300 hover:shadow-none"
-                size={28}
-              />
-              <FaLinkedin
-                className="cursor-pointer shadow-md shadow-gray-300 hover:shadow-none"
-                size={28}
-              />
-              <FaGithub
-                className="cursor-pointer shadow-md shadow-gray-300 hover:shadow-none"
-                size={28}
-              />
+              <a
+                href="https://www.facebook.com/anwar.lashkari.5"
+                target="_blanck"
+              >
+                <FaFacebook
+                  className="cursor-pointer shadow-md shadow-gray-300 hover:shadow-none"
+                  size={28}
+                />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/anwar-mohammadi/"
+                target="_blanck"
+              >
+                <FaLinkedin
+                  className="cursor-pointer shadow-md shadow-gray-300 hover:shadow-none"
+                  size={28}
+                />
+              </a>
+              <a href="https://github.com/AnwarMohammadi2001" target="_blanck">
+                <FaGithub
+                  className="cursor-pointer shadow-md shadow-gray-300 hover:shadow-none"
+                  size={28}
+                />
+              </a>
             </div>
           </div>
         </div>

@@ -9,8 +9,7 @@ export default {
       },
 
       fontFamily: {
-        poppins: ["Poppins", "sans-serif"],
-        averia: ["Averia Serif Libre", "serif"],
+        sans: ["Poppins", "sans-serif"], // Sets Poppins as the default sans-serif font
       },
 
       container: {

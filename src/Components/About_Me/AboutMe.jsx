@@ -8,7 +8,7 @@ const AboutMe = () => {
       <div className="grid grid-cols-1 md:gap-8 md:grid-cols-2">
         {/* Image Section with Framer Motion */}
         <motion.div
-          className="flex justify-center  items-center"
+          className="flex justify-center order-2 md:order-1 mt-5 md:pt-0  items-center"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, ease: "easeInOut" }}
@@ -20,7 +20,7 @@ const AboutMe = () => {
 
         {/* Text Content with Framer Motion */}
         <motion.div
-          className="pt-10 px-5 md:px-0 "
+          className="pt-10 px-5 md:px-0 order-1 md:order-2 "
           initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: "easeInOut", delay: 0.3 }}

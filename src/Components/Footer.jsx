@@ -1,5 +1,6 @@
 import React from "react";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -8,8 +9,10 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           {/* Logo or Branding */}
           <div className="mb-6 md:mb-0">
-            <h2 className="text-2xl font-bold">Anwar's Portfolio</h2>
-            <p className="text-gray-400">Crafting beautiful web experiences</p>
+            <h2 className="text-2xl text-center md:text-start font-bold py-3 md:py-1">
+              Anwar's Portfolio
+            </h2>
+            <p className="text-gray-400">Bringing ideas to life through code</p>
           </div>
 
           {/* Navigation Links */}
@@ -57,7 +60,7 @@ const Footer = () => {
               <FaGithub />
             </a>
             <a
-              href="https://linkedin.com/in/your-linkedin"
+              href="https://www.linkedin.com/in/anwar-mohammadi/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition duration-300 text-2xl"
@@ -65,12 +68,20 @@ const Footer = () => {
               <FaLinkedin />
             </a>
             <a
-              href="https://twitter.com/your-twitter"
+              href="https://x.com/love_hazara1"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition duration-300 text-2xl"
             >
               <FaTwitter />
+            </a>
+            <a
+              href="https://www.facebook.com/anwar.lashkari.5"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white transition duration-300 text-2xl"
+            >
+              <FaFacebook />
             </a>
           </div>
         </div>
