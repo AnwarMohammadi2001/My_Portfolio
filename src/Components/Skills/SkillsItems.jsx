@@ -43,13 +43,13 @@ const SkillsItems = () => {
         <div className="grid grid-cols-2 gap-10 px-5 lg:px-10">
           <div
             onClick={() => setActiveTab("Frontend")}
-            className={`md:h-28 h-24 relative cursor-pointer  rounded-md border-2 bg-transparent md:text-2xl text-lg text-white font-bold flex justify-center  items-end pb-5 lg:pb-0 lg:items-center ${
+            className={`md:h-28 h-24 relative cursor-pointer border-slate-900 dark:border-gray-100  rounded-md border-2 bg-transparent md:text-2xl text-lg text-slate-900 dark:text-gray-100 font-bold flex justify-center  items-end pb-5 lg:pb-0 lg:items-center ${
               activeTap === "Frontend"
-                ? "bg-gray-700 border-gray-100 text-[#2bb987] border-2"
+                ? "bg-gray-700 border-gray-100 text-[#2bb987] "
                 : ""
             } `}
           >
-            <h1>Frontend</h1>
+            <h1 className="pt-4">Frontend</h1>
 
             <span className="absolute -left-3 -top-5 border p-1 rounded-lg shadow-lg bg-[#1E293B]">
               <FaReact
@@ -63,13 +63,13 @@ const SkillsItems = () => {
           </div>
           <div
             onClick={() => setActiveTab("Backend")}
-            className={`md:h-28 h-24 relative cursor-pointer  rounded-md border-2 bg-transparent md:text-2xl text-lg text-white font-bold flex justify-center  items-end pb-5 lg:pb-0 lg:items-center ${
+            className={`md:h-28 h-24 relative cursor-pointer border-slate-900 dark:border-gray-100  rounded-md border-2 bg-transparent md:text-2xl text-lg text-slate-900 dark:text-gray-100 font-bold flex justify-center  items-end pb-5 lg:pb-0 lg:items-center ${
               activeTap === "Backend"
                 ? "bg-gray-700 border-gray-100 text-[#2bb987] border-2"
                 : ""
             } `}
           >
-            <h1>Backend</h1>
+            <h1 className="pt-4">Backend</h1>
 
             <span className="absolute -left-3 -top-5 border p-1 rounded-lg shadow-lg bg-[#1E293B]">
               <FaNodeJs
@@ -85,13 +85,13 @@ const SkillsItems = () => {
         <div className="grid grid-cols-2 gap-10 px-5 lg:px-10 mt-14">
           <div
             onClick={() => setActiveTab("Tools")}
-            className={`md:h-28 h-24 relative cursor-pointer  rounded-md border-2 bg-transparent md:text-2xl text-lg text-white font-bold flex justify-center  items-end pb-5 lg:pb-0 lg:items-center ${
+            className={`md:h-28 h-24 relative cursor-pointer border-slate-900 dark:border-gray-100  rounded-md border-2 bg-transparent md:text-2xl text-lg text-slate-900 dark:text-gray-100 font-bold flex justify-center  items-end pb-5 lg:pb-0 lg:items-center ${
               activeTap === "Tools"
-                ? "bg-gray-700 border-gray-100 text-[#2bb987] border-2"
+                ? "bg-gray-700 dark:border-gray-100 text-[#2bb987] border-2"
                 : ""
             }`}
           >
-            <h1>Tools</h1>
+            <h1 className="pt-4">Tools</h1>
 
             <span className="absolute -left-3 -top-5 border p-1 rounded-lg shadow-lg bg-[#1E293B]">
               <BsTools
@@ -106,13 +106,13 @@ const SkillsItems = () => {
           </div>
           <div
             onClick={() => setActiveTab("SoftTools")}
-            className={`md:h-28 h-24 relative cursor-pointer  rounded-md border-2 bg-transparent md:text-2xl text-lg text-white font-bold flex justify-center  items-end pb-5 lg:pb-0 lg:items-center ${
+            className={`md:h-28 h-24 relative cursor-pointer border-slate-900 dark:border-gray-100  rounded-md border-2 bg-transparent md:text-2xl text-lg text-slate-900 dark:text-gray-100 font-bold flex justify-center  items-end pb-5 lg:pb-0 lg:items-center ${
               activeTap === "SoftTools"
                 ? "bg-gray-700 border-gray-100 text-[#2bb987] border-2"
                 : ""
             }`}
           >
-            <h1 className="cursor-pointer">Softh Skill</h1>
+            <h1 className="cursor-pointer pt-4">Softh Skill</h1>
 
             <span className="absolute -left-3 -top-5 border p-1 rounded-lg shadow-lg bg-[#1E293B]">
               <FaAppStore

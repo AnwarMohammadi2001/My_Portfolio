@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FaXmark } from "react-icons/fa6";
 import { MdMenu } from "react-icons/md";
+import { MdLightMode, MdDarkMode } from "react-icons/md";
 import ResponsiveNavbar from "./ResponsiveNavbar";
 
 const navItems = [
@@ -32,10 +33,22 @@ const navItems = [
 ];
 export const Navbar = () => {
   const [isopen, setIsOpen] = useState(false);
+  const [darkmode, setDarkmode] = useState(() => {
+    const mode = localStorage.getItem("darkmode");
+    return mode === "false";
+  });
+  useEffect(() => {
+    if (darkmode) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+    localStorage.setItem("darkmode", String(darkmode));
+  }, [darkmode]);
 
   return (
     <div>
-      <nav className="container flex h-[80px] items-center  justify-between  bg-[#1E293B] ">
+      <nav className="container flex h-[80px] items-center  justify-between  bg-gray-200 dark:bg-[#1E293B] ">
         <div>
           {/* Logo and Name */}
           <h1 className="text-3xl font-bold text-[#F0F0F0]">
@@ -44,8 +57,8 @@ export const Navbar = () => {
                 M
               </span>
               <span
-                className="text-white
-              "
+                className={`${darkmode ? "text-gray-100" : "text-slate-900"}
+              `}
               >
                 ANWAR
               </span>
@@ -58,15 +71,40 @@ export const Navbar = () => {
             {navItems.map((item) => (
               <li
                 key={item.id}
-                className="uppercase inline-block cursor-pointer hover:text-[#ff014f] text-white text-lg hover:shadow-[0_3px_0_-1px_#ff014f] duration-300 font-semibold"
+                className="uppercase inline-block cursor-pointer hover:text-[#ff014f] text-slate-950 dark:text-gray-100 dark:hover:text-[#ff014f] text-lg hover:shadow-[0_3px_0_-1px_#ff014f] duration-300 font-semibold"
               >
                 <a href={item.path}>{item.title}</a>
               </li>
             ))}
           </ul>
-          <button className="bg-[#ff014f] text-white font-bold text-lg px-5 hover:bg-[#930d35] py-1.5 rounded-md">
-            Hire Me
-          </button>
+          <div className="flex items-center gap-3">
+            <button
+              className={`bg-[#ff014f]  font-bold text-lg px-5 hover:bg-[#930d35] py-1.5 rounded-md ${
+                darkmode ? "text-gray-100" : "text-slate-900"
+              } `}
+            >
+              Hire Me
+            </button>
+            <div className="hidden md:flex w-[100px]  items-center justify-end ">
+              <div
+                className="flex items-center cursor-pointer transition-all gap-2 duration-300"
+                onClick={() => setDarkmode(!darkmode)}
+              >
+                <span
+                  className={`text-lg font-bold mr-2   ${
+                    darkmode ? "text-gray-100" : "text-slate-900"
+                  } `}
+                >
+                  {darkmode ? " Dark" : " Light"}
+                </span>
+                {darkmode ? (
+                  <MdDarkMode className="text-blue-500 text-3xl" />
+                ) : (
+                  <MdLightMode className="text-yellow-400 text-3xl" />
+                )}
+              </div>
+            </div>
+          </div>
         </div>
         <div onClick={() => setIsOpen(!isopen)} className="block lg:hidden">
           {!isopen ? (

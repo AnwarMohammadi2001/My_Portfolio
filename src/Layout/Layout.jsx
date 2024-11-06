@@ -9,7 +9,7 @@ import Footer from "../Components/Footer";
 
 const Layout = () => {
   return (
-    <div>
+    <div className="bg-gray-200  dark:bg-[#1E293B]">
       <header>
         <Navbar />
       </header>

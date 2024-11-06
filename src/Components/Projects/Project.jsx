@@ -36,7 +36,9 @@ const Projects = () => {
   return (
     <div id="projects" className="mx-auto px-4 py-10">
       <div className="flex justify-center">
-        <h1 className="text-white font-bold text-3xl pb-10">My Latest Work</h1>
+        <h1 className="text-slate-900 dark:text-gray-100 font-bold text-3xl pb-10">
+          My Latest Work
+        </h1>
       </div>
       {/* Grid layout for cards */}
       <div className="container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
@@ -62,15 +64,13 @@ const Projects = () => {
                   className="bg-transparent text-white border-2  p-3 rounded-full hover:bg-gray-100 hover:text-black flex items-center space-x-2"
                 >
                   <FaCode size={28} />
-                 
                 </a>
                 {/* More Details Button */}
                 <a
                   href={project.details}
-                   className="bg-transparent text-white border-2  p-3 rounded-full hover:bg-gray-100 hover:text-black flex items-center space-x-2"
+                  className="bg-transparent text-white border-2  p-3 rounded-full hover:bg-gray-100 hover:text-black flex items-center space-x-2"
                 >
                   <BiShow size={28} />
-             
                 </a>
               </div>
             </div>

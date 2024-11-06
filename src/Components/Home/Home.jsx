@@ -52,12 +52,12 @@ const Home = () => {
         className="container  mx-auto min-h-[600px] pt-10  grid grid-cols-1 md:gap-8 lg:gap-5 md:grid-cols-2"
       >
         <div className="flex flex-col pt-10 items-center md:items-start">
-          <h1 className="text-md font-bold text-white">
+          <h1 className={`text-md font-bold text-slate-900 dark:text-gray-100`}>
             Welcome to My World !
           </h1>
           <motion.h1
             ref={textRef} // Reference to observe this element
-            className="text-4xl font-bold mt-8 text-white"
+            className="text-4xl font-bold mt-8 text-slate-900 dark:text-gray-100"
             variants={container}
             initial="hidden"
             animate={isInView ? "visible" : "hidden"} // Play animation when in view
@@ -77,7 +77,7 @@ const Home = () => {
               </motion.span>
             ))}
           </motion.h1>
-          <p className="text-3xl text-white font-bold mt-3  tracking-wider">
+          <p className="text-3xl text-slate-900 dark:text-gray-100 font-bold mt-3  tracking-wider">
             a Professional Web <br />{" "}
             <span className="text-[#ff014f]">
               Developer{" "}
@@ -95,7 +95,7 @@ const Home = () => {
               </motion.span>
             </span>
           </p>
-          <p className="mt-10 text-gray-300 text-lg text-justify">
+          <p className="mt-10 text-slate-900 dark:text-gray-100 font-semibold text-lg text-justify">
             I'm passionate about building modern, user-friendly websites using
             JavaScript, React, and Tailwind CSS. My experience includes working
             on various projects, from small startups to large corporations.
@@ -104,14 +104,16 @@ const Home = () => {
 
           {/* scoial media logo */}
           <div className="mt-10">
-            <h1 className="text-white font-bold text-xl">Follow ME !</h1>
-            <div className="flex space-x-5 mt-5 text-gray-400 ">
+            <h1 className="text-slate-900 dark:text-gray-100 font-bold text-xl">
+              Follow ME !
+            </h1>
+            <div className="flex space-x-5 mt-5 text-slate-800 dark:text-gray-300 ">
               <a
                 href="https://www.facebook.com/anwar.lashkari.5"
                 target="_blanck"
               >
                 <FaFacebook
-                  className="cursor-pointer shadow-md shadow-gray-300 hover:shadow-none"
+                  className="cursor-pointer shadow-md shadow-slate-900 dark:shadow-gray-300 hover:shadow-none"
                   size={28}
                 />
               </a>
@@ -120,13 +122,13 @@ const Home = () => {
                 target="_blanck"
               >
                 <FaLinkedin
-                  className="cursor-pointer shadow-md shadow-gray-300 hover:shadow-none"
+                  className="cursor-pointer shadow-md shadow-slate-900 dark:shadow-gray-300 hover:shadow-none"
                   size={28}
                 />
               </a>
               <a href="https://github.com/AnwarMohammadi2001" target="_blanck">
                 <FaGithub
-                  className="cursor-pointer shadow-md shadow-gray-300 hover:shadow-none"
+                  className="cursor-pointer shadow-md shadow-slate-900 dark:shadow-gray-300 hover:shadow-none"
                   size={28}
                 />
               </a>
@@ -134,8 +136,8 @@ const Home = () => {
           </div>
         </div>
         <div className="flex justify-center items-center mt-10 md:mt-0">
-          <div className="h-[550x] w-[400px]   rounded-xl z-10 shadow-[0px_0px_10px_5px_#de0029]">
-            <img src={cover} className="h-[550px] rounded-xl  " alt="" />
+          <div className="h-[550x] w-[390px]   rounded-xl  shadow-[0px_0px_10px_5px_#de0029]">
+            <img src={cover} className="h-[550px] w-full rounded-xl  " alt="" />
           </div>
         </div>
       </div>

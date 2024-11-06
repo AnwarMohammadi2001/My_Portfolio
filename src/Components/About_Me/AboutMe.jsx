@@ -26,7 +26,7 @@ const AboutMe = () => {
           transition={{ duration: 0.8, ease: "easeInOut", delay: 0.3 }}
         >
           <motion.h1
-            className="text-white font-bold px-5 md:px-0 text-2xl"
+            className="text-slate-900 dark:text-gray-100 font-bold px-5 md:px-0 text-2xl"
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
@@ -34,7 +34,7 @@ const AboutMe = () => {
             About Me
           </motion.h1>
           <motion.p
-            className="lg:w-[500px]  mt-7  text-gray-300 text-lg font-semibold"
+            className="lg:w-[500px]  mt-7  text-slate-900 dark:text-gray-100 text-lg font-semibold"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
@@ -44,7 +44,7 @@ const AboutMe = () => {
             surroundings.
           </motion.p>
           <motion.p
-            className="lg:w-[550px]  mt-5 text-gray-300 text-lg text-justify font-semibold"
+            className="lg:w-[550px]  mt-5 text-slate-900 dark:text-gray-100 text-lg text-justify font-semibold"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.6 }}
@@ -59,7 +59,7 @@ const AboutMe = () => {
           {/* Button Animation */}
           <div className="flex justify-center md:justify-end lg:justify-start">
             <motion.button
-              className="bg-[#ff014f] text-white  mt-7 font-bold text-lg px-3 hover:bg-[#930d35] py-1.5 rounded-md"
+              className="bg-[#ff014f] text-slate-900 dark:text-gray-100 mt-7 font-bold text-lg px-3 hover:bg-[#930d35] py-1.5 rounded-md"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, ease: "easeOut", delay: 0.8 }}

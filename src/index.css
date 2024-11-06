@@ -6,9 +6,9 @@
 .primary-btn {
   @apply bg-primary text-white font-semibold py-3 px-6 rounded-xl shadow-[0px_10px_14px_-7px_#de0029] hover:!scale-110 duration-300;
 }
-body {
+/* body {
   @apply bg-[#1E293B];
-}
+} */
 html {
   scroll-behavior: smooth;
 }
