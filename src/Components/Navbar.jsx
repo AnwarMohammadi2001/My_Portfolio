@@ -1,42 +1,23 @@
 import React, { useState, useEffect } from "react";
 import { FaXmark } from "react-icons/fa6";
-import { MdMenu } from "react-icons/md";
-import { MdLightMode, MdDarkMode } from "react-icons/md";
+import { MdMenu, MdLightMode, MdDarkMode } from "react-icons/md";
 import ResponsiveNavbar from "./ResponsiveNavbar";
 
 const navItems = [
-  {
-    id: 1,
-    title: "Home",
-    path: "#home",
-  },
-  {
-    id: 2,
-    title: "About me",
-    path: "#aboutme",
-  },
-  {
-    id: 3,
-    title: "Projects",
-    path: "#projects",
-  },
-  {
-    id: 4,
-    title: "Skills",
-    path: "#skills",
-  },
-  {
-    id: 5,
-    title: "Contact",
-    path: "#contact",
-  },
+  { id: 1, title: "Home", path: "#home" },
+  { id: 2, title: "About me", path: "#aboutme" },
+  { id: 3, title: "Projects", path: "#projects" },
+  { id: 4, title: "Skills", path: "#skills" },
+  { id: 5, title: "Contact", path: "#contact" },
 ];
+
 export const Navbar = () => {
   const [isopen, setIsOpen] = useState(false);
   const [darkmode, setDarkmode] = useState(() => {
     const mode = localStorage.getItem("darkmode");
-    return mode === "false";
+    return mode === "true";
   });
+
   useEffect(() => {
     if (darkmode) {
       document.documentElement.classList.add("dark");
@@ -47,8 +28,8 @@ export const Navbar = () => {
   }, [darkmode]);
 
   return (
-    <div>
-      <nav className="container flex h-[80px] items-center  justify-between  bg-gray-200 dark:bg-[#1E293B] ">
+    <div className="fixed top-0 left-0 w-full z-50 bg-gray-200 dark:bg-[#1E293B]">
+      <nav className="container mx-auto flex h-[70px] items-center justify-between">
         <div>
           {/* Logo and Name */}
           <h1 className="text-3xl font-bold text-[#F0F0F0]">
@@ -57,21 +38,19 @@ export const Navbar = () => {
                 M
               </span>
               <span
-                className={`${darkmode ? "text-gray-100" : "text-slate-900"}
-              `}
+                className={`${darkmode ? "text-gray-100" : "text-slate-900"}`}
               >
                 ANWAR
               </span>
-            </a>{" "}
-            {/* Link to Homepage */}
+            </a>
           </h1>
         </div>
         <div className="hidden lg:flex space-x-8 items-center">
-          <ul className=" flex items-center   space-x-8">
+          <ul className="flex items-center space-x-8">
             {navItems.map((item) => (
               <li
                 key={item.id}
-                className="uppercase inline-block cursor-pointer hover:text-[#ff014f] text-slate-950 dark:text-gray-100 dark:hover:text-[#ff014f] text-lg hover:shadow-[0_3px_0_-1px_#ff014f] duration-300 font-semibold"
+                className="uppercase inline-block cursor-pointer hover:text-[#ff014f] text-slate-950 dark:text-gray-100 dark:hover:text-[#ff014f] text-md hover:shadow-[0_3px_0_-1px_#ff014f] duration-300 font-semibold"
               >
                 <a href={item.path}>{item.title}</a>
               </li>
@@ -79,23 +58,23 @@ export const Navbar = () => {
           </ul>
           <div className="flex items-center gap-3">
             <button
-              className={`bg-[#ff014f]  font-bold text-lg px-5 hover:bg-[#930d35] py-1.5 rounded-md ${
+              className={`bg-[#ff014f] font-bold text-lg px-5 hover:bg-[#930d35] py-1.5 rounded-md ${
                 darkmode ? "text-gray-100" : "text-slate-900"
-              } `}
+              }`}
             >
               Hire Me
             </button>
-            <div className="hidden md:flex w-[100px]  items-center justify-end ">
+            <div className="hidden md:flex w-[100px] items-center justify-end">
               <div
                 className="flex items-center cursor-pointer transition-all gap-2 duration-300"
                 onClick={() => setDarkmode(!darkmode)}
               >
                 <span
-                  className={`text-lg font-bold mr-2   ${
+                  className={`text-lg font-bold mr-2 ${
                     darkmode ? "text-gray-100" : "text-slate-900"
-                  } `}
+                  }`}
                 >
-                  {darkmode ? " Dark" : " Light"}
+                  {darkmode ? "Dark" : "Light"}
                 </span>
                 {darkmode ? (
                   <MdDarkMode className="text-blue-500 text-3xl" />

@@ -4,7 +4,7 @@ import cover from "../../assets/images/cover_2.png";
 
 const AboutMe = () => {
   return (
-    <div id="aboutme" className="py-16 container">
+    <div id="aboutme" className="py-16 mt-5 container">
       <div className="grid grid-cols-1 md:gap-8 md:grid-cols-2">
         {/* Image Section with Framer Motion */}
         <motion.div
@@ -34,7 +34,7 @@ const AboutMe = () => {
             About Me
           </motion.h1>
           <motion.p
-            className="lg:w-[500px]  mt-7  text-slate-900 dark:text-gray-100 text-lg font-semibold"
+            className="lg:w-[500px]  mt-7  text-slate-900 dark:text-gray-100 text-md font-semibold"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
@@ -44,7 +44,7 @@ const AboutMe = () => {
             surroundings.
           </motion.p>
           <motion.p
-            className="lg:w-[550px]  mt-5 text-slate-900 dark:text-gray-100 text-lg text-justify font-semibold"
+            className="lg:w-[550px]  mt-5 text-slate-900 dark:text-gray-100 text-md text-justify font-semibold"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.6 }}

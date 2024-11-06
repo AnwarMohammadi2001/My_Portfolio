@@ -95,7 +95,7 @@ const Home = () => {
               </motion.span>
             </span>
           </p>
-          <p className="mt-10 text-slate-900 dark:text-gray-100 font-semibold text-lg text-justify">
+          <p className="mt-10 text-slate-900 dark:text-gray-100 font-semibold text-md text-justify">
             I'm passionate about building modern, user-friendly websites using
             JavaScript, React, and Tailwind CSS. My experience includes working
             on various projects, from small startups to large corporations.

@@ -4,7 +4,7 @@ import { FaFacebook } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-10">
+    <footer className="dark:bg-gray-900 bg-gray-200 border-t-2 border-slate-900 dark:border-gray-100 dark:text-gray-100 py-10">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
           {/* Logo or Branding */}
@@ -12,50 +12,42 @@ const Footer = () => {
             <h2 className="text-2xl text-center md:text-start font-bold py-3 md:py-1">
               Anwar's Portfolio
             </h2>
-            <p className="text-gray-400">Bringing ideas to life through code</p>
+            <p className="dark:text-gray-300 text-slate-600">
+              Bringing ideas to life through code
+            </p>
           </div>
 
           {/* Navigation Links */}
-          <div className="flex space-x-5 md:space-x-8 mb-6 md:mb-0">
-            <a
-              href="#home"
-              className="text-gray-400 hover:text-white transition duration-300"
-            >
+          <div className="flex space-x-5 md:space-x-8 mb-6 md:mb-0 text-slate-800 hover:text-slate-700 dark:text-gray-400 dark:hover:text-white">
+            <a href="#home" className="transition duration-300">
               Home
             </a>
-            <a
-              href="#aboutme"
-              className="text-gray-400 hover:text-white transition duration-300"
-            >
+            <a href="#aboutme" className=" transition duration-300">
               About Me
             </a>
-            <a
-              href="#projects"
-              className="text-gray-400 hover:text-white transition duration-300"
-            >
+            <a href="#projects" className=" transition duration-300">
               Projects
             </a>
-            <a
-              href="#skills"
-              className="text-gray-400 hover:text-white transition duration-300"
-            >
+            <a href="#skills" className=" transition duration-300">
               Skills
             </a>
-            <a
-              href="#contact"
-              className="text-gray-400 hover:text-white transition duration-300"
-            >
+            <a href="#contact" className=" transition duration-300">
               Contact
             </a>
           </div>
 
           {/* Social Media Links */}
-          <div className="flex space-x-6">
+        </div>
+
+        {/* Divider */}
+        <div className="relative w-full my-8">
+          <hr className="border-slate-900 dark:border-gray-300 border-2" />
+          <div className="absolute left-1/2 transform bg-gray-200 dark:bg-slate-900 px-5 -translate-x-1/2 -top-3 flex space-x-6 text-slate-800 hover:text-slate-700 dark:text-gray-400 dark:hover:text-white">
             <a
               href="https://github.com/AnwarMohammadi2001"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-white transition duration-300 text-2xl"
+              className="transition duration-300 text-2xl hover:text-slate-700 dark:text-gray-400 dark:hover:text-white"
             >
               <FaGithub />
             </a>
@@ -63,7 +55,7 @@ const Footer = () => {
               href="https://www.linkedin.com/in/anwar-mohammadi/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-white transition duration-300 text-2xl"
+              className="transition duration-300 text-2xl hover:text-slate-700 dark:text-gray-400 dark:hover:text-white"
             >
               <FaLinkedin />
             </a>
@@ -71,7 +63,7 @@ const Footer = () => {
               href="https://x.com/love_hazara1"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-white transition duration-300 text-2xl"
+              className="transition duration-300 text-2xl hover:text-slate-700 dark:text-gray-400 dark:hover:text-white"
             >
               <FaTwitter />
             </a>
@@ -79,16 +71,15 @@ const Footer = () => {
               href="https://www.facebook.com/anwar.lashkari.5"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-white transition duration-300 text-2xl"
+              className="transition duration-300 text-2xl hover:text-slate-700 dark:text-gray-400 dark:hover:text-white"
             >
               <FaFacebook />
             </a>
           </div>
         </div>
 
-        {/* Divider */}
-        <div className="border-t border-gray-700 mt-8 pt-6">
-          <p className="text-center text-gray-500">
+        <div className=" ">
+          <p className="text-center text-slate-700 dark:text-gray-500">
             © {new Date().getFullYear()} Anwar Mohammadi. All rights reserved.
           </p>
         </div>
