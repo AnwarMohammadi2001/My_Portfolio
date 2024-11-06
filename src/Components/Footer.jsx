@@ -4,15 +4,28 @@ import { FaFacebook } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <footer className="dark:bg-gray-900 bg-gray-200 border-t-2 border-slate-900 dark:border-gray-100 dark:text-gray-100 py-10">
+    <footer className="dark:bg-gray-900 bg-gray-200 border-t-2 border-slate-900 dark:border-gray-100 dark:text-gray-100 pt-5 pb-8">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
           {/* Logo or Branding */}
           <div className="mb-6 md:mb-0">
-            <h2 className="text-2xl text-center md:text-start font-bold py-3 md:py-1">
-              Anwar's Portfolio
-            </h2>
-            <p className="dark:text-gray-300 text-slate-600">
+            <div>
+              {/* Logo and Name */}
+              <h1 className="text-3xl font-bold text-[#F0F0F0]">
+                <a
+                  href="home"
+                  className="uppercase flex items-center space-x-2"
+                >
+                  <span className="flex justify-center items-center w-12 h-12 text-white rounded-full bg-[#ff014f] font-bold text-3xl">
+                    M
+                  </span>
+                  <span className="text-slate-900 dark:text-gray-100">
+                    ANWAR
+                  </span>
+                </a>
+              </h1>
+            </div>
+            <p className="dark:text-gray-300  text-slate-600 px-20">
               Bringing ideas to life through code
             </p>
           </div>
@@ -40,14 +53,19 @@ const Footer = () => {
         </div>
 
         {/* Divider */}
-        <div className="relative w-full my-8">
-          <hr className="border-slate-900 dark:border-gray-300 border-2" />
-          <div className="absolute left-1/2 transform bg-gray-200 dark:bg-slate-900 px-5 -translate-x-1/2 -top-3 flex space-x-6 text-slate-800 hover:text-slate-700 dark:text-gray-400 dark:hover:text-white">
+        <div className="text-center">
+          <span className="font-semibold  text-slate-900 dark:text-gray-100">
+            Follow Me!
+          </span>
+        </div>
+        <div className="relative w-full my-6">
+          <hr className="border-slate-900 dark:border-gray-100 border-2 " />
+          <div className="absolute left-1/2 border-l-2 border-r-2 rounded-lg py-2 dark:border-gray-100 border-slate-900 transform bg-gray-200 dark:bg-slate-900 px-5 -translate-x-1/2 -top-5 flex space-x-6 text-slate-800 ">
             <a
               href="https://github.com/AnwarMohammadi2001"
               target="_blank"
               rel="noopener noreferrer"
-              className="transition duration-300 text-2xl hover:text-slate-700 dark:text-gray-400 dark:hover:text-white"
+              className="transition duration-300 hover:scale-125 text-2xl hover:text-slate-700 dark:text-gray-400 dark:hover:text-white"
             >
               <FaGithub />
             </a>
@@ -55,7 +73,7 @@ const Footer = () => {
               href="https://www.linkedin.com/in/anwar-mohammadi/"
               target="_blank"
               rel="noopener noreferrer"
-              className="transition duration-300 text-2xl hover:text-slate-700 dark:text-gray-400 dark:hover:text-white"
+              className="transition duration-300 hover:scale-125  text-2xl hover:text-slate-700 dark:text-gray-400 dark:hover:text-white"
             >
               <FaLinkedin />
             </a>
@@ -63,7 +81,7 @@ const Footer = () => {
               href="https://x.com/love_hazara1"
               target="_blank"
               rel="noopener noreferrer"
-              className="transition duration-300 text-2xl hover:text-slate-700 dark:text-gray-400 dark:hover:text-white"
+              className="transition duration-300 hover:scale-125  text-2xl hover:text-slate-700 dark:text-gray-400 dark:hover:text-white"
             >
               <FaTwitter />
             </a>
@@ -71,7 +89,7 @@ const Footer = () => {
               href="https://www.facebook.com/anwar.lashkari.5"
               target="_blank"
               rel="noopener noreferrer"
-              className="transition duration-300 text-2xl hover:text-slate-700 dark:text-gray-400 dark:hover:text-white"
+              className="transition duration-300 hover:scale-125  text-2xl hover:text-slate-700 dark:text-gray-400 dark:hover:text-white"
             >
               <FaFacebook />
             </a>
