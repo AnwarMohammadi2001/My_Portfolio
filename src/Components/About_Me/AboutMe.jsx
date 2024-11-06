@@ -58,14 +58,16 @@ const AboutMe = () => {
 
           {/* Button Animation */}
           <div className="flex justify-center md:justify-end lg:justify-start">
-            <motion.button
+            <motion.a
+              href="public\Mohammad Anwar.pdf" // Replace with your actual resume file path
+              download="Mohammad Anwar.pdf"
               className="bg-[#ff014f] text-slate-900 dark:text-gray-100 mt-7 font-bold text-lg px-3 hover:bg-[#930d35] py-1.5 rounded-md"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, ease: "easeOut", delay: 0.8 }}
             >
               Download Resume
-            </motion.button>
+            </motion.a>
           </div>
         </motion.div>
       </div>

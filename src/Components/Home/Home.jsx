@@ -49,7 +49,7 @@ const Home = () => {
     <div>
       <div
         id="home"
-        className="container  mx-auto min-h-[600px] pt-10  grid grid-cols-1 md:gap-8 lg:gap-5 md:grid-cols-2"
+        className="container mt-16  mx-auto min-h-[600px] pt-10  grid grid-cols-1 md:gap-8 lg:gap-5 md:grid-cols-2"
       >
         <div className="flex flex-col pt-10 items-center md:items-start">
           <h1 className={`text-md font-bold text-slate-900 dark:text-gray-100`}>
@@ -135,9 +135,9 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-center items-center mt-10 md:mt-0">
-          <div className="h-[550x] w-[390px]   rounded-xl  shadow-[0px_0px_10px_5px_#de0029]">
-            <img src={cover} className="h-[550px] w-full rounded-xl  " alt="" />
+        <div className="flex justify-center items-center mt-5 md:mt-0">
+          <div className="h-[450px]    rounded-xl  shadow-[0px_0px_10px_5px_#de0029]">
+            <img src={cover} className="h-full w-full rounded-xl  " alt="" />
           </div>
         </div>
       </div>
