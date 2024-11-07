@@ -20,13 +20,11 @@ const Layout = () => {
     }
   };
 
-  // Add scroll event listener when the component is mounted
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Function to scroll to the top of the page
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
