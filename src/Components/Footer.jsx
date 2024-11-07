@@ -6,6 +6,8 @@ const Footer = () => {
   return (
     <footer className="dark:bg-gray-900 bg-gray-200 border-t-2 border-slate-900 dark:border-gray-100 dark:text-gray-100 pt-5 pb-8">
       <div className="container mx-auto px-4">
+
+        
         <div className="flex flex-col md:flex-row justify-between items-center">
           {/* Logo or Branding */}
           <div className="mb-6 md:mb-0">
@@ -31,7 +33,7 @@ const Footer = () => {
           </div>
 
           {/* Navigation Links */}
-          <div className="flex space-x-5 md:space-x-8 mb-6 md:mb-0 text-slate-800 hover:text-slate-700 dark:text-gray-400 dark:hover:text-white">
+          <div className="flex space-x-5 md:space-x-8 mb-6 md:mb-0 font-semibold text-slate-800 hover:text-slate-700 dark:text-gray-400 dark:hover:text-white">
             <a href="#home" className="transition duration-300">
               Home
             </a>
